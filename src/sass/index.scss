@@ -1,0 +1,33 @@
+@charset "utf-8";
+@import "compass/reset";
+$page_width:1090px;
+$fonsize :12px;
+ //头部
+@import'top';
+//搜索框
+@import'search';
+// 导航栏
+@import'nav';
+//新品图
+@import'online';
+//轮播图
+@import'banner';
+//新品推荐
+@import'new';
+//精选活动
+@import'active';
+//优选好物
+@import'good';
+//公司信息
+@import'company';
+//帮助使用信息
+@import'use';
+//底部信息
+@import'foot';
+
+
+
+
+
+
+

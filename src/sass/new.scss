@@ -1,0 +1,58 @@
+.new{
+    width: 1090px;
+    height: 436px;
+    margin: 20px auto;
+}
+.new_top{
+    width: 100%;
+    height: 36px;
+    // background-color: gray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .new_zuo{
+        width: 320px;
+        height: 100%;
+        line-height: 35px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        h3{
+            font-size: 26px;
+            color: #000000;
+        }
+        p{
+            font-size: 12px;
+        }
+    }
+    .new_you{
+        font-size: 12px;
+        color: gray;
+    }
+}
+.new_low{
+    width: 100%;
+    height: 400px;
+    .new_shangpin{
+        width: 262px;
+        height: 380px;
+        float: left;
+        margin-right: 10px;
+        margin-bottom: 15px;
+        background-color: white;
+      
+        img{
+            width: 262px;
+            height: 262px;
+        }
+        a{
+            font-size: 16px;
+            margin-top: 10px;
+        }
+        h3{
+            font-size: 29px;
+            color: red;
+            margin-top: 10px;
+        }
+    }
+}

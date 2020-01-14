@@ -5,16 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>快乐购 - 值得信赖的电视购物平台,视频导购,货到付款,正品行货 -美容护肤、数码、家电、服装、家居、运动休闲</title>
-    <meta name="keywords"
-        content="快乐购,快乐购物电视购物,快乐购官方网站,快乐购电视购物,快乐购电视购物直播,快乐购网上商城,湖南快乐购,快乐购物,快乐购电视购物网站,快乐购官网,湖南快乐购电视购物,湖南卫视快乐购" />
-    <meta name="description"
-        content="快乐购物股份有限公司官方网站，中国电视购物上市第一股！正品保证，全国配送，便捷支付，让您轻松放心购物！24小时免费订购热线4007051111 4007058800" />
+    <title>产品详情页</title>
     <link rel="stylesheet" href="../dist/style/index.css">
     <link rel="stylesheet" href="../dist/style/common.css">
-
     <style>
-        .icon {
+    .icon {
             width: 1em;
             height: 1em;
             vertical-align: -0.15em;
@@ -25,18 +20,224 @@
         body {
             background-color: white;
         }
+        * {
+			padding: 0px;
+			margin: 0px;
+		}
+
+		a {
+			text-decoration: none;
+		}
+
+		ul,
+		ol,
+		li {
+			list-style: none;
+		}
+
+		input {
+			border: 0;
+		}
+
+		.wrap {
+			float: left;
+			position: relative;
+		}
+
+		#spic {
+			width: 400px;
+			height: 400px;
+			border: 1px solid #000;
+			float: left;
+			position: relative;
+		}
+
+		#spic img {
+			width: 400px;
+			height: 400px;
+		}
+
+		#sf {
+			width: 50px;
+			height: 50px;
+			background: orange;
+			opacity: 0.3;
+			position: absolute;
+			left: 0px;
+			top: 0px;
+			visibility: hidden;
+		}
+
+		#bf {
+			width: 400px;
+			height: 500px;
+			border: 1px solid #000;
+			overflow: hidden;
+			position: absolute;
+			left: 410px;
+			visibility: hidden;
+			z-index: 100;
+		}
+
+		#bf img {
+			position: absolute;
+			left: 0px;
+			top: 0px;
+			width: 800px;
+			height: 800px;
+		}
+
+		#ulist {
+			position: absolute;
+			left: 0px;
+			top: 430px;
+			width: 402px;
+			height: 56px;
+			overflow: hidden;
+		}
+
+		#ulist a {
+			float: left;
+			width: 10px;
+			height: 54px;
+			border: 1px solid #ccc;
+			text-decoration: none;
+			line-height: 56px;
+			text-align: center;
+			background: #fff;
+		}
+
+		#list {
+			float: left;
+			margin-left: 18px;
+			width: 372px;
+			position: relative;
+		}
+
+		.wrap ul {
+			list-style: none;
+			float: left;
+			position: absolute;
+			left: 0px;
+			top: 0px;
+		}
+
+		.wrap ul li {
+			float: left;
+			width: 56px;
+			height: 56px;
+			padding-right: 6px;
+		}
+
+		.wrap ul li img {
+			width: 52px;
+			height: 52px;
+			border: 1px solid #ccc;
+		}
+
+		#right {
+			position: absolute;
+			right: 0px;
+			top: 0px;
+			color: #333;
+		}
+
+		#left {
+			position: absolute;
+			left: 0px;
+			top: 0px;
+			z-index: 2;
+			color: #fff;
+		}
+
+
+
+		.goodsinfo {
+            height: 600px;
+			margin: 50px 0 0 100px;
+		}
+
+		.goodsinfo-img {
+			width: 200px;
+			height: 200px;
+			float: left;
+		}
+
+		.goodsinfo-img img {
+			width: 200px;
+			height: 200px;
+		}
+
+		.goodsinfo-word {
+			overflow: hidden;
+			float: left;
+		}
+
+		.p-name {
+			width: 350px;
+			height: 50px;
+			margin-left: 50px;
+			margin-top: 20px;
+		}
+
+		.p-name .loadtitle {
+			font-family: "微软雅黑";
+			color: #666666;
+			font-weight: bold;
+			font-size: 18px;
+		}
+
+		.p-price {
+			margin-left: 50px;
+			margin-top: 10px;
+			width: 300px;
+			height: 50px;
+			background: rgba(183, 183, 183, 0.4);
+			line-height: 50px;
+		}
+
+		.p-btn {
+			margin-top: 20px;
+		}
+
+		.p-btn input {
+			display: inline-block;
+			width: 50px;
+			height: 46px;
+			font-size: 20px;
+			font-family: "微软雅黑";
+			color: black;
+			margin-left: 50px;
+			border: 1px solid gray;
+			float: left;
+		}
+
+		.p-btn a {
+			display: block;
+			width: 100px;
+			height: 50px;
+			background-color: red;
+			font-size: 16px;
+			font-family: "微软雅黑";
+			color: white;
+			line-height: 50px;
+			text-align: center;
+			float: left;
+			margin-left: 10px;
+		}
     </style>
 </head>
 
 <body>
+
     <!-- -------------------------------头部 ---------------------------->
     <div id="header">
         <div class="header_mind">
             <!-- 头部左边 -->
             <div class="h_left">
                 <span class="wel">欢迎来到欢乐购<span>
-                        <a href="http://10.31.152.46/huanlegou/src/login.html" target="blank" class="login">[登录]</a>
-                        <a href="http://10.31.152.46/huanlegou/src/register.html" class="reg">[免费注册]</a>
+                        <a href="" target="blank" class="login">[登录]</a>
+                        <a href="" class="reg">[免费注册]</a>
             </div>
             <!-- 头部右边 -->
             <ul class="ulR">
@@ -60,20 +261,21 @@
     <div class="search">
         <!-- 搜索栏左边图片 -->
         <div class="se_log">
-            <a href="http://10.31.152.46/huanlegou/src/index1.html">
+            <a href="https://www.happigo.com/">
                 <img style="width:146px;height:75px" src="images/kuaileshenghuolog.png" alt="">
             </a>
-            <a href="http://10.31.152.46/huanlegou/src/index1.html">
+            <a href="https://www.happigo.com/">
                 <img src="images/xinrenyouli.png" alt="">
             </a>
         </div>
         <!-- 搜索框 -->
         <div class="se_search">
+
             <div class="se_sousuo">
                 <svg class="icon" aria-hidden="true">
                     <use xlink:href="#icon-fangdajing"></use>
                 </svg>
-                <input type="text" placeholder="搜搜看咯">
+                <input type="text">
                 <div class="se_wenzi">
                     <p>搜索</p>
                 </div>
@@ -100,7 +302,6 @@
 
 
     </div>
-
 
 
     <!-- -------------------------------导航----------------------------->
@@ -134,175 +335,42 @@
     </div>
 
 
+    <!-- --------------------------购物车------------------- -->
+    <div class="goodsinfo">
+		<div class="box"><a href="catrlist.html">进入购物车</a></div>
+		<div class="wrap">
+			<div id="spic">
+				<img src="" alt="">
+				<div id="sf"></div>
+			</div>
+			<div id="bf">
+				<img src="" alt="" id="bpic">
+			</div>
+			<div id="ulist">
+				<a href="javascript:;" id="left">&lt;</a>
+				<div id="list">
+					<ul>
 
-    <!-- -------------------------------新版上线------------------------->
-    <div class="online">
-        <!-- 图片 -->
-        <ul class="on_pic">
-            <li class="show"> <img src="images/banner0.jpg" alt=""></li>
-            <li> <img src="images/banner1.jpg" alt=""></li>
-            <li> <img src="images/banner2.jpg" alt=""></li>
-        </ul>
-        <ol class="on_an">
-            <li class="anniu">0</li>
-            <li>1</li>
-            <li>2</li>
-        </ol>
+					</ul>
+				</div>
+				<a href="javascript:;" id="right">&gt;</a>
+			</div>
+		</div>
+		<div class="goodsinfo-word">
+			<div class="p-name">
+				<a class="loadtitle" href="##"></a>
+			</div>
+			<div class="p-price"><strong><em>￥</em><i class="loadpcp"></i></strong></div>
+			<div class="p-btn">
+				<input type="text" id="count" value="1" />
+				<a href="##">加入购物车</a>
+			</div>
+		</div>
     </div>
+    
 
-
-
-    <!-- -------------------------------商品预告  轮播图------------------>
-    <div class="banner">
-        <div class="ba_main">
-            <div class="ba_top">
-                <div class="ba_zuo">
-                    <h3> | 商品预告</h3>
-                    <p>手机下单支付可立减30元</p>
-                </div>
-                <div class="ba_you">
-                    <a href="">更多预告 > </a>
-                </div>
-            </div>
-            <div class="ba_low">
-                <div class="ba_shangpin">
-                    <img src="images/pobiji.jpg" alt="">
-                    <p>BSETUSE -2019新款豆浆机</p> 
-                    <div class="ba_price">
-                        <h3>¥ 100</h3>
-                        <p> 原价199</p>
-                        <a href="">立即抢购</a>
-                    </div>
-                    
-                </div>
-                <div class="ba_shangpin">
-                    <img src="images/yushi.jpg" alt="">
-                    <p>玉石收藏价值很高</p> 
-                    <div class="ba_price">
-                        <h3>¥ 100</h3>
-                        <p> 原价199</p>
-                        <a href="">立即抢购</a>
-                    </div>
-
-                </div>
-                <div class="ba_shangpin">
-                    <img src="images/honghuayou.jpg" alt="">
-                    <p>新鲜植物油</p> 
-                    <div class="ba_price">
-                        <h3>¥ 100</h3>
-                        <p> 原价199</p>
-                        <a href="">立即抢购</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-    <!----------------------------------新品推荐 ------------------------>
-    <div class="new">
-        <div class="new_top">
-            <div class="new_zuo">
-                <h3> | 新品推荐</h3>
-                <p>为你寻觅世间好物</p>
-            </div>
-            <div class="new_you">
-                <svg class="icon" aria-hidden="true">
-                    <use xlink:href="#icon-shuaxin"></use>
-                </svg>
-                <a href="">换一批 </a>
-            </div>
-        </div>
-        <div class="new_low">
-            <!-- <div class="new_shangpin">
-                <img src="images/honghuayou.jpg" alt="">
-                <a href="">富含营养的食用油</a>
-                <h3>¥ 100</h3>
-            </div>
-            <div class="new_shangpin">
-                <img src="images/yushi.jpg" alt="">
-                <a href="">玉石收藏价值很高</a>
-                <h3>¥ 111</h3>
-            </div>
-            <div class="new_shangpin">
-                <img src="images/honghuayou.jpg" alt="">
-                <a href="">富含营养的食用油</a>
-                <h3>¥ 122</h3>
-            </div>
-            <div style="margin-right: none;" class="new_shangpin">
-                <img src="images/yushi.jpg" alt="">
-                <a href="">过年买块玉石回家</a>
-                <h3>¥ 1333</h3>
-            </div> -->
-        </div>
-    </div>
-
-
-
-    <!-- -------------------------------精选活动 ------------------------>
-    <div class="active">
-        <div class="ac_top">
-            <h3>| 精选好物</h3>
-        </div>
-        <img src="images/jingxuanhaowu.jpg" alt="">
-        <div class="ac_low">
-            <div class="ac_shangpin">
-                <img src="images/honghuayou.jpg" alt="">
-                <a href="">富含营养的食用油</a>
-                <h3>¥ 100</h3>
-            </div>
-            <div class="ac_shangpin">
-                <img src="images/yushi.jpg" alt="">
-                <a href="">玉石收藏价值很高</a>
-                <h3>¥ 111</h3>
-            </div>
-            <div class="ac_shangpin">
-                <img src="images/honghuayou.jpg" alt="">
-                <a href="">富含营养的食用油</a>
-                <h3>¥ 111</h3>
-            </div>
-            <div style="margin-right: none;" class="ac_shangpin">
-                <img src="images/yushi.jpg" alt="">
-                <a href="">过年买块玉石回家</a>
-                <h3>¥ 333</h3>
-            </div>
-        </div>
-    </div>
-
-
-
-    <!-- -------------------------------优选好物------------------------->
-    <div class="good">
-        <img src="images/jingxuanhaowu.jpg" alt="">
-        <div class="gd_low">
-            <div class="gd_shangpin">
-                <img src="images/honghuayou.jpg" alt="">
-                <a href="">富含营养的食用油</a>
-                <h3>¥ 100</h3>
-            </div>
-            <div class="gd_shangpin">
-                <img src="images/yushi.jpg" alt="">
-                <a href="">玉石收藏价值很高</a>
-                <h3>¥ 111</h3>
-            </div>
-            <div class="gd_shangpin">
-                <img src="images/honghuayou.jpg" alt="">
-                <a href="">富含营养的食用油</a>
-                <h3>¥ 111</h3>
-            </div>
-            <div class="gd_shangpin">
-                <img src="images/yushi.jpg" alt="">
-                <a href="">过年买块玉石回家</a>
-                <h3>¥ 333</h3>
-            </div>
-        </div>
-    </div>
-
-
-
-    <!-----------------------------------公司信息--------------------- -->
-    <div class="company">
+     <!-----------------------------------公司信息--------------------- -->
+     <div class="company">
         <div class="co_xinxi">
             <svg class="icon" aria-hidden="true">
                 <use xlink:href="#icon-shangshixinxi"></use>
@@ -426,11 +494,9 @@
         </div>
 
     </div>
-    <!-- <script src="./js/tool.js"></script> -->
     <script src="fonts/iconfont.js"></script>
     
-    <script src="./js/index1.js"></script>
-    <script src="./js/jquery.js"></script>
+
 </body>
 
 </html>

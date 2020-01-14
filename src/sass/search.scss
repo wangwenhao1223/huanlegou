@@ -1,0 +1,88 @@
+//搜索框
+.search{
+    width: 1090px;
+    height: 83px;
+    margin:20px auto;
+   
+}
+//搜索项的log
+.se_log{
+    float: left;
+}
+//中间的搜索栏
+.se_search{
+    width: 509px;
+    height:84px;
+    float: left;
+    margin-left: 65px;
+}
+.se_sousuo{
+    width: 98%;
+    height: 35px;
+    border-radius: 100px;
+    margin-top: 20px;
+    border: 3px solid red;
+    .icon{
+        float: left;
+        font-size: 20px;
+        margin: 5px 3px;
+    }
+    input{
+        width: 70%;
+        margin-top: 4px;
+        margin-left:25px;
+        height: 70%;
+        outline: none;
+        float: left;
+        border: none;
+    }
+    .se_wenzi{
+        width: 14%;
+        height: 100%;
+        float: right;
+        background: red;
+        border-radius: 0 50px 50px 0;
+  p{
+      text-align: center;
+      line-height: 35px;
+      font-size: 22px;
+      color: white;
+  } 
+
+ }
+}
+// 搜索框下面的字
+.se_p li{
+    float: left;
+    color: #8C8C8C;
+    margin:4px 0 0 10px;
+}
+// 购物车
+.se_shop{
+    width: 125px;
+    height: 44px;
+    float: right;
+    margin-top:20px ;
+    margin-left: 30px;
+    background: red;
+    border:1px soile white;
+    border-radius: 20px;
+    .icon{
+        float: left;
+        font-size:20px;
+        margin:10px 10px;
+        color: white;   
+    }
+    p{
+        text-align: center;
+        line-height: 40px;
+        font-size: 20px;
+        color: white;
+    }
+}
+
+
+
+
+
+

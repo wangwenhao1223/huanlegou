@@ -1,0 +1,91 @@
+.banner {
+    width: 100%;
+    height: 321px;
+    margin-top: 20px;
+}
+.ba_main{
+    width:1090px;
+    height: 100%;
+    margin: 0 auto;
+    background-color: white;
+    .ba_top{
+        width: 100%;
+        height: 36px;
+        background: #f3f3f3;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .ba_zuo{
+            width: 320px;
+            height: 100%;
+            line-height: 36px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            h3{
+                font-size: 26px;
+                color: #000000;
+            }
+            p{
+                font-size: 16px;
+            }
+        }
+        .ba_you{
+            width: 110px;
+            height: 32px;
+            border:  1px solid red;
+            border-radius: 16px;
+            text-align: center;
+            line-height: 32px;
+            a{
+                font-size: 16px;
+                color: red;
+            }
+        }
+    }
+    .ba_low{
+    width: 100%;
+    height: 321px;
+    .ba_shangpin{
+        width:350px;
+        height: 321px;
+        float: left;
+        margin-right: 10px;
+        margin-bottom: 15px;
+        background-color: white;
+        text-align: center;
+      
+        img{
+            width: 199px;
+            height: 199px;
+        }
+        p{
+            font-size: 16px;
+            text-align: left;
+        }
+        .ba_price{
+            width: 100%;
+            height: 30px;
+            h3{
+                font-size: 29px;
+                color: red;
+                margin-top: 10px;
+                text-align: left;
+            }
+            a{
+                width: 90px;
+                height: 30px;
+                border: 1px solid red;
+                color: red;
+                float: right;
+                font-size: 20px;
+                border-radius: 20px;
+            }
+            p{
+                font-size: 16px;
+            }
+        }
+     
+    }
+}
+}
